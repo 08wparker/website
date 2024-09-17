@@ -6,7 +6,7 @@ Below is the entity-relationship diagram (ERD) that provides an overview of the 
 
 ![](images/ERD.png)
 
-Relational CLIF (RCLIF) is a database that is organized into clinically relevant column categories - demographics, objective measures, respiratory support, orders, and inputs-outputs. Below are sample templates for each table in R-CLIF. Here you can find detailed descriptions of each table and their fields.
+Relational CLIF (RCLIF) is a database of clinically useful data on critical illness that is organized into clinically relevant column categories - demographics, objective measures, respiratory support, orders, and inputs-outputs. Below are sample templates for each table in R-CLIF. Here you can find detailed descriptions of each table and their fields.
 
 You can use our custom GPT- [CLIF Assistant](https://chatgpt.com/g/g-h1nk6d3eR-clif-assistant) to learn more about CLIF and develop analysis scripts using [Clifford](https://github.com/clif-consortium/CLIF/tree/main/clifford), a set of simulated CLIF tables.
 
@@ -16,13 +16,13 @@ CLIF is an evolving format, and some parts of the format are more mature than ot
 
 ## Overall Maturity Level for CLIF
 
--   ![Experimental](https://img.shields.io/badge/Maturity-Experimental-red) **Experimental**: Majority of critical illness and hospital course not represented in Entity-Relationship (ER) model, expect frequent breaking changes.
--   ![Beta](https://img.shields.io/badge/Maturity-Beta-yellow) **Beta**: ER model complete and breaking changes to the existing structure unlikely. Actively seeking feedback about new tables to add to the ER model to fully capture critical illness.
--   ![Stable](https://img.shields.io/badge/Maturity-Stable-brightgreen) **Stable**: Tested and recommended for general use. EHR data not currently represented in CLIF outside the scope of the format.
+-   ![Experimental](https://img.shields.io/badge/Maturity-Experimental-red) **Experimental**: Majority of critical illness not represented in Entity-Relationship (ER) model, expect frequent breaking changes.
+-   ![Beta](https://img.shields.io/badge/Maturity-Beta-yellow) **Beta**: Breaking changes to existing tables or structure unlikely. Actively seeking feedback about new tables to add to the ER model to fully capture critical illness and new fields to add to individual tables.
+-   ![Stable](https://img.shields.io/badge/Maturity-Stable-brightgreen) **Stable**: Tested and published in multiple peer reviewed manuscripts and recommended for general use. EHR data not currently represented in CLIF outside the scope of the format.
 -   ![Mature](https://img.shields.io/badge/Maturity-Mature-blue) **Mature**: Widely adopted across majority of consoritium sites with majority of tables in stable or mature (see maturity levels for CLIF Tables). ER model very stable.
 -   ![Deprecated](https://img.shields.io/badge/Maturity-Deprecated-lightgrey) **Deprecated**: No longer maintained.
 
-The entity-relationship model for this project is currently at the ![Beta](https://img.shields.io/badge/Maturity-Beta-yellow) **Beta** level for adult patients in a general medical intensive care unit. Major breaking changes to the existing structure are unlikely. The consortium is actively seeking feedback about new tables and fields to add to the ER model to achieve the goal of representing developing a [minimum Common ICU Data Elements (mCIDE)](https://clif-consortium.github.io/website/mcide.html)
+The entity-relationship model for this project is currently at the ![Beta](https://img.shields.io/badge/Maturity-Beta-yellow) **Beta** level for adult patients in a general medical intensive care unit with common conditions such as septic shock and acute respiratory failure. Major breaking changes to the existing structure are unlikely. The consortium is actively seeking feedback about new tables and fields to add to the ER model to achieve the goal of representing developing a [minimum Common ICU Data Elements (mCIDE)](https://clif-consortium.github.io/website/mcide.html) and complete representation of all clinically useful data on critically ill patients.
 
 For pediatric patients, CLIF is in the ![Experimental](https://img.shields.io/badge/Maturity-Experimental-red) **Experimental** maturity phase. CLIF is also ![Experimental](https://img.shields.io/badge/Maturity-Experimental-red) **Experimental** for adult patients in specialty ICUs (e.g. cardiac intensive care unit, surgical intensive care unit, and neurointensive care unit).
 
